@@ -1,6 +1,6 @@
-import { createStore, applyMiddleware, compose  } from 'redux';
-import rootReducer from './reducer';
+import { createStore, applyMiddleware, compose } from 'redux'; //eslint-disable-line
 import thunk from 'redux-thunk';
+import rootReducer from './reducer';
 
 const middlewares = [thunk];
 
@@ -19,5 +19,5 @@ const createReduxStore = () => {
 
 const store = createReduxStore();
 const { dispatch, getState } = store;
-  
-export  { store, dispatch, getState };
+
+export { store, dispatch, getState };
